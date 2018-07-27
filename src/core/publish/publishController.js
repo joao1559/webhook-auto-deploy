@@ -12,7 +12,8 @@ async function publish(req, res) {
 
         if (!params.repository) return;
 
-        let command = `cd ../${params.repository} && git pull && cd .. && docker-compose restart ${params.repository}`;
+        // let command = `cd ../${params.repository} && git pull && cd .. && docker-compose restart ${params.repository}`;
+        let command = `cd .. && pwd`;
 
         exec(command, (err, out) => {
             if (err) throw err;
