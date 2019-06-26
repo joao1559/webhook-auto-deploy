@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const body = require('body-parser');
 
-global.port = 10000;
+global.port = 15000;
 module.exports = app;
 
 let allowCors = function (req, res, next) {
